@@ -8,12 +8,11 @@ public class chase : MonoBehaviour
     public Transform player;
     Animator anim; //reference to animator component
     NavMeshAgent agent; //reference to navmeshagent
-    string state = "patrol";
     public float aggroRange = 10;// afstand tussen npc en fps wanneer actie moet komen
     public float patroltime = 15;// tijd in seconden tot de npc een nieuwe destination gaat zoeken
     public GameObject[] waypoints;
 
-    float speed = 1.5f;
+    float speed = 0,75f;
 
     int index; //current waypoint index in waypoints array
     // Start is called before the first frame update
